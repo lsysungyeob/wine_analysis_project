@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# git 초기화
+git init
+
 # analyze.py
 git add analyze.py
 git commit -m 'Scikit-learn 데이터 분석 Python 코드'
@@ -27,5 +31,7 @@ git commit -m 'conda 환경 정보'
 git add README.md
 git commit -m '프로젝트 설명 파일'
 
+git remote add origin https://github.com/lsysungyeob/wine_analysis_project.git
+git branch -M main
 # 원격 저장소로 push
 git push
