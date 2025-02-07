@@ -34,4 +34,4 @@ git commit -m '프로젝트 설명 파일'
 git remote add origin https://github.com/lsysungyeob/wine_analysis_project.git
 git branch -M main
 # 원격 저장소로 push
-git push --set-upstream origin main
+git push
