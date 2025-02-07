@@ -28,15 +28,15 @@ with open('output.txt', 'w') as f:
     print(f'와인 데이터셋의 행의 갯수는 {num_rows}, 열의 갯수는 {num_cols}.')
     f.write(f'행: {num_rows}, 열: {num_cols}\n')
     f.write('각 특성별 정보\n')
-    f.write(f'{'feature':30}|{'mean':7}|{'std':7}|{'max':7}|{'min':7}\n')
-    f.write('-' * 62 + '\n')
+    f.write(f'{'feature':30}|{'mean':8}|{'std':8}|{'max':8}|{'min':8}|\n')
+    f.write('-' * 67 + '\n')
     for feature in features:
-        mean = df[feature].mean()
-        std = df[feature].std()
-        max = df[feature].max()
-        min = df[feature].min()
+        mean = df[feature].mean() # 평균
+        std = df[feature].std() # 표준편차
+        max = df[feature].max() # 최대값
+        min = df[feature].min() # 최소값
         
-        f.write(f'{feature:30}|{mean:7.2f}|{std:7.2f}|{max:7}|{min:7}\n')
+        f.write(f'{feature:30}|{mean:8.3f}|{std:8.3f}|{max:8}|{min:8}|\n')
     
-print('와인 데이터셋의 분석이 끝났습니다. 결과는 output.txt파일에 정장되었습니다.')
+print('와인 데이터셋의 분석이 끝났습니다. 결과는 output.txt파일에 저장되었습니다.')
     
